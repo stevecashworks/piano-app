@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+        <title>Piano app</title>
+        <meta charset="UTF8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./piano.css"/>
+        
+
+    </head>
+    <body>
+        <div class="piano-container">
+
+            <div class="piano">
+                <div class="piano-controls">
+                    
+                        
+                 <div class="power">On</div>
+
+                
+                    <div class="piano-screen"></div>
+                    <div class="piano-volume">
+                        <input disabled="false" type="range" name="volume" id="volume">
+                        <p>Volume:  <span class="volume-val"></span></p>
+                    </div>
+                </div>
+                <div class="keys">
+                    <div class="key" id="c"></div>
+                    <div class="key sharp" id="c_sharp">
+                        <div style="background-color:black;height:70%;"></div>
+                        <div style="background-color:white;height:30%;"></div>
+
+                    </div>
+                    <div class="key"id="d"></div>
+                    <div class="key sharp" id="d_sharp">
+                        <div style="background-color:black;height:70%;"></div>
+                        <div style="background-color:white;height:30%;"></div>
+
+                    </div>
+                    <div class="key" id='e'></div>
+                    <div class="key" id="f"></div>
+                    <div class="key sharp" id="f_sharp">
+                        <div style="background-color:black;height:70%;"></div>
+                        <div style="background-color:white;height:30%;"></div>
+
+                    </div>
+                    <div class="key" id="g"></div>
+                    <div class="key sharp" id="g_sharp">
+                        <div style="background-color:black;height:70%;"></div>
+                        <div style="background-color:white;height:30%;"></div>
+
+                    </div>
+                    <div class="key" id="a" ></div>
+                    <div class="key sharp" id="a_sharp">
+                        <div style="background-color:black;height:70%;"></div>
+                        <div style="background-color:white;height:30%;"></div>
+
+                    </div>
+                    <div class="key"id="b"></div>
+                    <div class="key" id="high_c"></div>
+                </div>
+            </div>
+        </div>
+        
+ <script src="./piano.js"></script>
+    </body>
+</html>

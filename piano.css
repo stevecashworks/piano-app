@@ -1,0 +1,88 @@
+.body{
+    width:100vw;
+    height:100vh;
+}
+.piano-container{
+    width:100%;
+    display:grid;
+    place-items: center;
+    height:100vh;
+}
+.piano{
+    width:900px;
+    height:400px;
+    background-color: gray;
+}
+.piano-screen{
+    background-color:rgba(243, 240, 240,.2);
+    width:450px;
+    height:150px;
+    margin: 0 auto;
+}
+.piano-volume{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+.piano-volume>p{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bolder;
+    font-size:20px
+}
+.piano-controls{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.power{
+    display: flex;
+    background-color: green;
+    color: white;
+    font-weight:900;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    transition:all 1s ease;
+    font-size: 24px;
+    text-transform: uppercase;
+    
+}
+.power:hover{
+    transform:scale(1.1)
+}
+.keys{
+    height:220px;
+    width:100%;
+    padding:auto 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.key{
+    width:80px;
+    height:100%;
+    background-color: white;
+    border: 0.5px solid gray;
+    transition: all 0.5s ease;
+
+    
+}
+.key:hover{
+    opacity:0.8
+}
+.sharp{
+    
+    height:100%;
+    width:40px;
+    
+    position:relative;
+    z-index:1;
+}
