@@ -3,7 +3,9 @@
     height:100vh;
 }
 .piano-container{
-    width:100%;
+    width:100vw;
+    display:grid;
+    background-color:#333;
     place-items: center;
     height:100vh;
     position: relative;
@@ -87,7 +89,10 @@
     z-index:1;
 }
 @media (max-width:480px){
- .piano{
+        .piano-container{
+            display:block;
+        }
+    .piano{
     transform: rotate(270deg) scale(0.6);
     position: relative;
     top:100px;
