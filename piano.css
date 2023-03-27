@@ -96,7 +96,7 @@
     transform: rotate(270deg) scale(0.6);
     position: relative;
     top:100px;
-    left:-10vw;
+    left:10vw;
     margin:0;
    }
    body{
