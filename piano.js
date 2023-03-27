@@ -41,12 +41,21 @@ const volumeVal= document.querySelector('.volume-val');
 const volumeEl=document.getElementById('volume');
 const allKeys=document.querySelectorAll('.key')
 allKeys.forEach(x=>{
-    x.addEventListener('click',()=>{
+    x.addEventListener('mousedown',()=>{
         if(is_On){
             
             const audio=sounds[x.id]
             audio.volume=volume/100
             audio.play()
+        }
+        
+    })
+    x.addEventListener('mouseup',()=>{
+        if(is_On){
+            
+            const audio=sounds[x.id]
+            audio.volume=volume/100
+            audio.stop()
         }
         
     })

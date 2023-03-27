@@ -4,14 +4,16 @@
 }
 .piano-container{
     width:100%;
-    display:grid;
     place-items: center;
     height:100vh;
+    position: relative;
+
 }
 .piano{
     width:900px;
     height:400px;
     background-color: gray;
+    transform: rotate;
 }
 .piano-screen{
     background-color:rgba(243, 240, 240,.2);
@@ -82,7 +84,18 @@
     
     height:100%;
     width:40px;
-    
-    position:relative;
     z-index:1;
+}
+@media (max-width:480px){
+ .piano{
+    transform: rotate(270deg) scale(0.6);
+    position: relative;
+    top:100px;
+    left:-100%;
+    margin:0;
+   }
+   body{
+    background-color:#333;
+   }
+  
 }
