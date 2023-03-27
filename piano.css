@@ -90,13 +90,14 @@
 }
 @media (max-width:480px){
         .piano-container{
-            display:block;
+            height:100vw;
+            width:100vh;
         }
     .piano{
     transform: rotate(270deg) scale(0.6);
-    position: relative;
+    position: absolute;
     top:100px;
-    left:10vw;
+    left:-80vw;
     margin:0;
    }
    body{
